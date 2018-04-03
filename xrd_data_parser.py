@@ -1,6 +1,6 @@
 import csv
 from bs4 import BeautifulSoup
-from pypif.obj import *
+
 
 def parse_csv(csv_path):
     """
