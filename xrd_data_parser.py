@@ -3,6 +3,16 @@ from bs4 import BeautifulSoup
 from pypif.obj import *
 
 def parse_csv(csv_path):
+    """
+    Parses csv file and creates an output file in csv-template format.
+
+    Args:
+        csv_path (str): path to csv file
+
+    Returns:
+        outfile_path (str): path to output file
+
+    """
 
     with open(csv_path, 'r') as csv_file:
 
@@ -22,12 +32,22 @@ def parse_csv(csv_path):
     outfile.write("\"["+",".join(intensity)+"]\""+","+"\"["+",".join(angle)+"]\"")
     outfile.close()
 
-    return outfile
+    return outfile_path
 
 
-def parse_xrdml(xrdml_file):
+def parse_xrdml(xrdml_path):
+    """
+    Parses xrdml file and creates an output file in csv-template format.
 
-    soup = BeautifulSoup(open(xrdml_file, 'r'), 'xml')
+    Args:
+        xrdml_path (str): path to xrdml file
+
+    Returns:
+        outfile_path (str): path to output file
+
+    """
+
+    soup = BeautifulSoup(open(xrdml_path, 'r'), 'xml')
 
     intensity = soup.intensities.contents[0].split(" ")
     intensity = [str(x) for x in intensity]
@@ -46,15 +66,10 @@ def parse_xrdml(xrdml_file):
     print(start_position, end_position)
     print(step_size)
 
-    outfile_path = xrdml_file.replace(".xrdml", "_xrdml_template.csv")
+    outfile_path = xrdml_path.replace(".xrdml", "_xrdml_template.csv")
     outfile = open(outfile_path, 'w')
     outfile.write("PROPERTY: Intensity, CONDITION: 2$\\theta$ ($\circ$)\n")
     outfile.write("\"[" + ",".join(intensity) + "]\"" + "," + "\"[" + ",".join(theta_values) + "]\"")
     outfile.close()
 
-
-
-
-
-
-    return
+    return outfile_path
