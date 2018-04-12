@@ -1,0 +1,289 @@
+********************************************************************************
+   General Structure Analysis System-II Crystal Structure Refinement
+              by Robert B. Von Dreele & Brian H. Toby
+                Argonne National Laboratory(C), 2010
+ This product includes software developed by the UChicago Argonne, LLC,
+            as Operator of Argonne National Laboratory.
+                          Please cite:
+   B.H. Toby & R.B. Von Dreele, J. Appl. Cryst. 46, 544-549 (2013)
+********************************************************************************
+ Least squares controls:
+ Refinement type: analytic Hessian
+ Maximum number of cycles: 3
+ Regularize hydrogens (if any): False
+ Initial shift factor: 1.000
+
+ Phases:
+
+ Phase name: alpha Ti
+=======================================================================================================================================
+
+ X-ray scattering factors:
+   Symbol     fa                                      fb                                      fc
+---------------------------------------------------------------------------------------------------
+ Ti         9.75950   7.35580   1.69910   1.90210   7.85080   0.50000  35.63380 116.10500   1.28070
+
+ Neutron scattering factors:
+   Symbol   isotope       mass       b       resonant terms
+---------------------------------------------------------------------------------------------------
+ Ti      Nat. Abund.     47.900   -0.337
+
+ Space Group: P 63/m m c
+ The lattice is centrosymmetric primitive hexagonal
+ The Laue symmetry is 6/mmm
+ The lattice point group is 6/mmm
+ Multiplicity of a general site is 24
+ The inversion center is located at 0,0,0
+ 
+ The equivalent positions are:
+
+ ( 1)     X,     Y,     Z 
+ ( 2)   X-Y,     X, 1/2+Z 
+ ( 3)    -Y,   X-Y,     Z 
+ ( 4)    -X,    -Y, 1/2+Z 
+ ( 5)   Y-X,    -X,     Z 
+ ( 6)     Y,   Y-X, 1/2+Z 
+ ( 7)   Y-X,     Y,     Z 
+ ( 8)    -X,   Y-X, 1/2+Z 
+ ( 9)    -Y,    -X,     Z 
+ (10)   X-Y,    -Y, 1/2+Z 
+ (11)     X,   X-Y,     Z 
+ (12)     Y,     X, 1/2+Z 
+
+ Atoms:
+   name    type  refine?   x         y         z      frac site sym  mult I/A   Uiso     U11     U22     U33     U12     U13     U23
+---------------------------------------------------------------------------------------------------------------------------------------
+     Ti     Ti     XU   0.33333   0.66667   0.25000   1.329-6m2 100    2    I-0.00075                                                
+
+ Unit cell: a = 2.93074 b = 2.93074 c = 4.65680 alpha = 90.000 beta = 90.000 gamma = 120.000 volume = 34.640 Refine? True
+
+ Spherical harmonics texture: Order:0
+
+ Phase name: alpha' Ti
+=======================================================================================================================================
+
+ X-ray scattering factors:
+   Symbol     fa                                      fb                                      fc
+---------------------------------------------------------------------------------------------------
+ Ti         9.75950   7.35580   1.69910   1.90210   7.85080   0.50000  35.63380 116.10500   1.28070
+
+ Neutron scattering factors:
+   Symbol   isotope       mass       b       resonant terms
+---------------------------------------------------------------------------------------------------
+ Ti      Nat. Abund.     47.900   -0.337
+
+ Space Group: P 63/m m c
+ The lattice is centrosymmetric primitive hexagonal
+ The Laue symmetry is 6/mmm
+ The lattice point group is 6/mmm
+ Multiplicity of a general site is 24
+ The inversion center is located at 0,0,0
+ 
+ The equivalent positions are:
+
+ ( 1)     X,     Y,     Z 
+ ( 2)   X-Y,     X, 1/2+Z 
+ ( 3)    -Y,   X-Y,     Z 
+ ( 4)    -X,    -Y, 1/2+Z 
+ ( 5)   Y-X,    -X,     Z 
+ ( 6)     Y,   Y-X, 1/2+Z 
+ ( 7)   Y-X,     Y,     Z 
+ ( 8)    -X,   Y-X, 1/2+Z 
+ ( 9)    -Y,    -X,     Z 
+ (10)   X-Y,    -Y, 1/2+Z 
+ (11)     X,   X-Y,     Z 
+ (12)     Y,     X, 1/2+Z 
+
+ Atoms:
+   name    type  refine?   x         y         z      frac site sym  mult I/A   Uiso     U11     U22     U33     U12     U13     U23
+---------------------------------------------------------------------------------------------------------------------------------------
+     Ti     Ti     XU   0.33333   0.66667   0.25000   1.175-6m2 100    2    I 0.06328                                                
+    Ti2     Ti     XU   0.66667   0.33333   0.75000   1.175-6m2 100    2    I 0.06328                                                
+
+ Unit cell: a = 2.96213 b = 2.96213 c = 4.65771 alpha = 90.000 beta = 90.000 gamma = 120.000 volume = 35.392 Refine? True
+
+ Spherical harmonics texture: Order:0
+
+ Phase: alpha Ti in histogram: PWDR W1X2-6.xrdml Scan 1
+=======================================================================================================================================
+ Phase fraction  :     6.8169 Refine? True
+ Extinction coeff:     0.0000 Refine? False
+
+ Spherical harmonics preferred orientation: Order: 14 Refine? True
+ names :      C(6,6)     C(14,0)      C(2,0)      C(8,6)     C(10,6)     C(12,6)    C(12,12)      C(4,0)     C(10,0)      C(6,0)     C(14,6)      C(8,0)    C(14,12)     C(12,0)
+ values:     -18.789      -2.635      11.850       9.902      22.052      15.875     -13.852      13.959     -20.568      -8.236      -8.167     -20.195       1.310     -13.103
+ Penalty hkl list: [] tolerance: 0.10
+
+ Size model    : isotropic equatorial:       1.000 Refine? False
+	 LG mixing coeff.:       1.0000 Refine? False
+
+ Mustrain model: isotropic equatorial:     11502.0 Refine? True
+	 LG mixing coeff.:      1.0000 Refine? False
+
+ Hydrostatic/elastic strain:
+ names :         D11         D33
+ values:   0.0004836  -0.0002506
+ refine:        True        True
+
+ Phase: alpha' Ti in histogram: PWDR W1X2-6.xrdml Scan 1
+=======================================================================================================================================
+ Phase fraction  :     1.6126 Refine? True
+ Extinction coeff:     0.0000 Refine? False
+
+ Spherical harmonics preferred orientation: Order: 14 Refine? True
+ names :      C(6,6)     C(14,0)      C(2,0)      C(8,6)     C(10,6)     C(12,6)    C(12,12)      C(4,0)     C(10,0)      C(6,0)     C(14,6)      C(8,0)    C(14,12)     C(12,0)
+ values:     233.338       2.127    -185.318      64.131    -597.994     -32.090       1.066    -171.242     214.178     278.931      15.399     374.067       0.714      38.009
+ Penalty hkl list: [] tolerance: 0.10
+
+ Size model    : isotropic equatorial:       1.000 Refine? False
+	 LG mixing coeff.:       1.0000 Refine? False
+
+ Mustrain model: isotropic equatorial:      8276.4 Refine? True
+	 LG mixing coeff.:      1.0000 Refine? False
+
+ Hydrostatic/elastic strain:
+ names :         D11         D33
+ values:    0.003641  -0.0002255
+ refine:        True        True
+
+ Histogram: PWDR W1X2-6.xrdml Scan 1 histogram Id: 0
+=======================================================================================================================================
+ Instrument type: Bragg-Brentano
+ Histogram limits:    20.02 deg to    79.97 deg
+
+ Sample Parameters:
+ Goniometer omega = 0.00, chi = 0.00, phi = 0.00
+ name  :         Scale         Shift  Transparency    SurfRoughA    SurfRoughB
+ value :        7.3620      -21.0390        0.0000        0.0000        0.0000
+ refine:          True          True         False         False         False
+
+ Instrument Parameters:
+ name  :     Azimuth        Bank I(L2)/I(L1)        Lam1        Lam2    Polariz.        SH/L
+ value :    0.000000    1.000000    0.500000    1.540510    1.544330    0.700000    0.002000
+ refine:                   False       False                               False       False
+
+ name  :           U           V           W           X           Y           Z        Zero
+ value :  -14.620144    2.121151    7.389451    0.000000    0.000000    0.000000   -0.000210
+ refine:        True        True        True       False       False       False       False
+
+ Background function: log interpolate Refine? True
+ Coefficients:   2091.924  1590.980  1227.891   993.277   824.476   711.078   626.657   614.512   525.162   469.447   425.143
+                  382.515   434.008   286.165
+
+ Refinement results:
+---------------------------------------------------------------------------------------------------------------------------------------
+ Number of function calls: 7 No. of observations: 1396 No. of parameters: 62 User rejected: 0 Sp. gp. extinct: 0
+ Refinement time =    0.821s,    0.821s/cycle, for 1 cycles
+ wR =    5.61%, chi**2 =      3662.55, GOF =   1.66
+----------------------------------------------------------------------------------------------------------------------------------
+Variables generated by constraints
+
+ name  :          0::A0          1::A0
+ value :         0.1552         0.1520
+ sig   :         0.0002         0.0002
+
+ Phases:
+ Result for phase: alpha Ti
+=======================================================================================================================================
+ Reciprocal metric tensor: 
+  names :            A11            A22            A33            A12            A13            A23
+  values:    0.155232625    0.155232625    0.046113249    0.155232625    0.000000000    0.000000000
+  esds  :    0.000224484                   0.000009149                                             
+ New unit cell:
+  names :           a           b           c       alpha        beta       gamma      Volume
+  values:    2.930744    2.930744    4.656795     90.0000     90.0000    120.0000      34.640
+  esds  :    0.003532    0.003532    0.000462                                           0.050
+
+ Atoms:
+   name      x         y         z      frac   Uiso     U11     U22     U33     U12     U13     U23
+---------------------------------------------------------------------------------------------------------------------------------------
+     Ti     Ti:
+ values:   0.33333   0.66667   0.25000   1.329-0.00075
+ sig   :                                       0.01134
+ Result for phase: alpha' Ti
+=======================================================================================================================================
+ Reciprocal metric tensor: 
+  names :            A11            A22            A33            A12            A13            A23
+  values:    0.151960732    0.151960732    0.046095116    0.151960732    0.000000000    0.000000000
+  esds  :    0.000162891                   0.000005010                                             
+ New unit cell:
+  names :           a           b           c       alpha        beta       gamma      Volume
+  values:    2.962127    2.962127    4.657711     90.0000     90.0000    120.0000      35.392
+  esds  :    0.002646    0.002646    0.000253                                           0.039
+
+ Atoms:
+   name      x         y         z      frac   Uiso     U11     U22     U33     U12     U13     U23
+---------------------------------------------------------------------------------------------------------------------------------------
+     Ti     Ti:
+ values:   0.33333   0.66667   0.25000   1.175 0.06328
+ sig   :                                       0.00417
+    Ti2     Ti:
+ values:   0.66667   0.33333   0.75000   1.175 0.06328
+ sig   :                                       0.00417
+
+ Phase: alpha Ti in histogram: PWDR W1X2-6.xrdml Scan 1
+=======================================================================================================================================
+ Final refinement RF, RF^2 = 38.97%, 70.61% on 9 reflections
+ Durbin-Watson statistic = 1.087
+ Bragg intensity sum = -6.33e+05
+ Phase fraction  :    6.81692, sig    0.85195 Weight fraction  :  0.70504, sig    0.08811
+
+ Spherical harmonics preferred orientation: Order: 14
+ names :      C(6,6)     C(14,0)      C(2,0)      C(8,6)     C(10,6)     C(12,6)    C(12,12)      C(4,0)     C(10,0)      C(6,0)     C(14,6)      C(8,0)    C(14,12)     C(12,0)
+ values:     -18.789      -2.635      11.850       9.902      22.052      15.875     -13.852      13.959     -20.568      -8.236      -8.167     -20.195       1.310     -13.103
+ sig   :       0.300       0.396       0.114       1.146       0.525       1.370       1.260       0.255       0.246       0.314       1.877       0.349       1.571       0.590
+
+ Mustrain model: isotropic
+ equatorial:     11502.0, sig:  1612.5 LG mix coeff.:      1.0000
+
+ Hydrostatic/elastic strain:
+ name  :         D11         D33
+ value :   0.0004836  -0.0002506
+ sig   :   0.0001874   9.203e-06
+
+ Phase: alpha' Ti in histogram: PWDR W1X2-6.xrdml Scan 1
+=======================================================================================================================================
+ Final refinement RF, RF^2 = 26.59%, 40.89% on 9 reflections
+ Durbin-Watson statistic = 1.087
+ Bragg intensity sum = 8.96e+05
+ Phase fraction  :    1.61264, sig    0.02052 Weight fraction  :  0.29496, sig    0.00375
+
+ Spherical harmonics preferred orientation: Order: 14
+ names :      C(6,6)     C(14,0)      C(2,0)      C(8,6)     C(10,6)     C(12,6)    C(12,12)      C(4,0)     C(10,0)      C(6,0)     C(14,6)      C(8,0)    C(14,12)     C(12,0)
+ values:     233.338       2.127    -185.318      64.131    -597.994     -32.090       1.066    -171.242     214.178     278.931      15.399     374.067       0.714      38.009
+ sig   :       2.171       0.919       0.367       1.631       2.928       3.149       2.819       0.517       0.887       0.664       3.014       0.950       3.355       0.911
+
+ Mustrain model: isotropic
+ equatorial:      8276.4, sig:  1112.9 LG mix coeff.:      1.0000
+
+ Hydrostatic/elastic strain:
+ name  :         D11         D33
+ value :    0.003641  -0.0002255
+ sig   :   7.809e-05   4.966e-06
+
+ Histogram: PWDR W1X2-6.xrdml Scan 1 histogram Id: 0
+=======================================================================================================================================
+ PWDR histogram weight factor = 1.000
+ Final refinement wR = 5.61% on 1396 observations in this histogram
+ Other residuals: R = 4.18%, R-bkg = 5.98%, wR-bkg = 5.61% wRmin = 3.47%
+ Instrument type: Bragg-Brentano
+
+ Resonant form factors:
+ Element:       Ti
+ f'     :    0.218
+ f"     :    1.807
+
+ Sample Parameters:
+ names :         Scale         Shift  Transparency    SurfRoughA    SurfRoughB
+ values:        7.3620      -21.0390        0.0000        0.0000        0.0000
+ sig   :        5.3542       42.9899                                          
+
+ Instrument Parameters:
+ names :           U           V           W           X           Y           Z        Zero
+ value :  -14.620144    2.121151    7.389451    0.000000    0.000000    0.000000   -0.000210
+ sig   :  144.120197  158.839732   38.755775                                                
+
+ Background function: log interpolate
+ value :       2092      1591      1228     993.3     824.5     711.1     626.7     614.5     525.2     469.4     425.1     382.5       434     286.2
+ sig   :      18.47     12.01     9.919     9.187     7.279     6.994     8.112      6.49      4.84     5.294     3.894     5.097     9.142     9.222
+ Background sums: empirical 8.83e+05, Debye 0, peaks 0, Total 8.83e+05
