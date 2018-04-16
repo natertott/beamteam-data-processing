@@ -14,6 +14,7 @@ def parse_refinement(refine_path):
             store_names.append(n)
         elif weight_frac.search(n) != None:
             store_frac.append(n)
+    f.close()
 
     info_store_names = []
     info_store_frac  = []
@@ -38,6 +39,6 @@ def parse_refinement(refine_path):
         outfile.write("Property " + temp[2] + "Phase Fraction,")
         outfile.write(phase_frac_info[m] + " ")
         m+=1
-        close(outfile)
+    outfile.close()
 
     return outfile_path
