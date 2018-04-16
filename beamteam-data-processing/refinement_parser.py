@@ -14,7 +14,7 @@ def parse_refinement(refine_path):
             store_names.append(n)
         elif weight_frac.search(n) != None:
             store_frac.append(n)
-    f.close()
+    refine_path.close()
 
     info_store_names = []
     info_store_frac  = []
