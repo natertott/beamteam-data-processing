@@ -3,41 +3,29 @@ import re
 
 def parse_refinement(refine_path):
 
-    f = open(refine_path,"r").readlines()
+    lines = open(refine_path, "r").readlines()
 
-    store_names = []
-    store_frac = []
-    phase_name = re.compile('Phase name:')
-    weight_frac = re.compile('Weight fraction')
-    for n in f:
-        if phase_name.search(n) != None:
-            store_names.append(n)
-        elif weight_frac.search(n) != None:
-            store_frac.append(n)
+    phases = []
+    weights = []
 
-    info_store_names = []
-    info_store_frac  = []
-    for n in range(0,len(store_names)):
-        info_store_names.append(store_names[n].split())
+    for line in lines:
 
-    for n in range(0,len(store_frac)):
-        info_store_frac.append(store_frac[n].split())
+        if "Phase name:" in line:
+            phase = line.split("Phase name: ")[-1].strip("\n")
+            phases.append(phase)
 
-    temp = []
-    phase_frac_info = []
-    for n in info_store_frac:
-        hold = n
-        phase_frac_info.append(hold[3])
-        temp =[]
+        if "Weight fraction" in line:
+            all_num = re.findall("\d+\.\d+", line)
+            weight = all_num[0]+"$\pm$"+all_num[1]
+            weights.append(weight)
 
-    m = 0
-    outfile_path = refine_path.replace(".lst","_template.csv")
-    outfile = open(outfile_path,"w")
-    for ii in info_store_names:
-        temp = ii
-        outfile.write("Property " + temp[2] + " Phase Fraction,")
-        outfile.write(phase_frac_info[m])
-        m+=1
+    outfile_path = refine_path.replace(".lst", "_template.csv")
+    outfile = open(outfile_path, "w")
+    outfile.write("PROPERTY: Phase, PROPERTY: Phase fraction (%)\n")
+
+    for p, w in zip(phases, weights):
+        outfile.write(p+", "+w)
+
     outfile.close()
 
     return outfile_path
